@@ -16,7 +16,7 @@ class SwiftPlayWithString {
         return result
     }
     
-    func captializeFirstLetter(sentence: String) -> String {
+    func capitalizeFirstLetter(sentence: String) -> String {
         let words = sentence.components(separatedBy: " ")
         var newWords = [String]()
         
