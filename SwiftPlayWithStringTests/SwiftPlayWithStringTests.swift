@@ -18,7 +18,12 @@ class SwiftPlayWithStringTests: XCTestCase {
     
     func testReversedString() {
         myString = "abcdef"
-        XCTAssertEqual(SwiftPlayWithString.reversedString(str: myString), "fedcba")
+        XCTAssertEqual(SwiftPlayWithString.reversedString(myString), "fedcba")
+    }
+    
+    func testCapitalizedFirstLetter() {
+        myString = "swift is cool"
+        XCTAssertEqual(SwiftPlayWithString.capitalizeFirstLetter(myString), "Swift Is Cool")
     }
 
 }
