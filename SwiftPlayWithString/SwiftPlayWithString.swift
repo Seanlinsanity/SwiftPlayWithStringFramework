@@ -8,15 +8,15 @@
 
 import Foundation
 
-class SwiftPlayWithString {
+public class SwiftPlayWithString {
     
-    func reversedString(str: String) -> String {
+    public static func reversedString(_ str: String) -> String {
         let characters = Array(str).reversed()
         let result = String(characters)
         return result
     }
     
-    func capitalizeFirstLetter(sentence: String) -> String {
+    public static func capitalizeFirstLetter(_ sentence: String) -> String {
         let words = sentence.components(separatedBy: " ")
         var newWords = [String]()
         
